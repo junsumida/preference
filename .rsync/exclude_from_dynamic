@@ -1,0 +1,21 @@
+- .*
+- tmp/*
+- doc/*
+- db/*
+- vendor/*
+- lib/*
+- test/*
+- log/*
+- script/*
++ app/assets
++ app/assets/*
++ app/views
++ app/views/*
+- app/*
+- config/*
+- Gemfile
+- Gemfile.lock
+- README
+- Rakefile
+- config.ru
+
