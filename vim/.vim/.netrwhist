@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/Users/sjun/workspace/WondershakeAdmin/admin/app/views'
+let g:netrw_dirhist_2='/Users/sjun/workspace/WondershakeAdmin/admin/app'
+let g:netrw_dirhist_3='/Users/sjun/workspace/WondershakeAdmin/admin/app/controllers'
+let g:netrw_dirhist_4='/Users/sjun/workspace/DynamicWeb/app/assets/javascripts'
+let g:netrw_dirhist_5='/Users/sjun'
+let g:netrw_dirhist_6='/Users/sjun/workspace/DynamicWeb/app/assets/javascripts'
+let g:netrw_dirhist_7='/Users/sjun/workspace/DynamicWeb'
+let g:netrw_dirhist_8='/Users/sjun/workspace/DynamicWeb/config'
+let g:netrw_dirhist_9='/Users/sjun/workspace/DynamicWeb/app/assets/javascripts'
