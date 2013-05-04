@@ -28,6 +28,9 @@ NeoBundle 'rhysd/accelerated-jk'
 "Easy access plugim for ruby
 NeoBundle 'szw/vim-tags'
 
+"For Haskell
+NeoBundle 'dag/vim2hs'
+
 set number
 set title
 set autoindent
