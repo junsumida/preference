@@ -31,6 +31,9 @@ NeoBundle 'szw/vim-tags'
 "For Haskell
 NeoBundle 'dag/vim2hs'
 
+"surround.vim
+NeoBundle 'tpope/vim-surround'
+
 set number
 set title
 set autoindent
