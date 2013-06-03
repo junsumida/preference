@@ -12,6 +12,10 @@ NeoBundle 'Shougo/vimproc'
 "Neocomplcache
 NeoBundle 'Shougo/neocomplcache'
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><S-TAB>  pumvisible() ? "\<C-p>" : "\<S-TAB>"
+
+"snippet is great lol
+NeoBundle 'Shougo/neosnippet'
 
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimshell'
