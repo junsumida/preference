@@ -8,7 +8,11 @@ endif
 " recommended to install
 NeoBundle 'Shougo/vimproc'
 " after install, turn shell ~/.vim/bundle/vimproc, (n,g)make -f your_machines_makefile"
+
+"Neocomplcache
 NeoBundle 'Shougo/neocomplcache'
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'Shougo/vimshell'
 
@@ -67,3 +71,8 @@ set wrapscan
 "Cursor Movement
 nmap j <Plug>(accelerated_jk_gj)
 nmap k <Plug>(accelerated_jk_gk)
+
+map <C-n> :NERDTreeToggle<CR>
+
+"testing
+set wildmode=list,full
