@@ -41,6 +41,8 @@ NeoBundle 'dag/vim2hs'
 
 "surround.vim
 NeoBundle 'tpope/vim-surround'
+"Ctrlp: filepath completion like in zsh
+NeoBundle 'kien/ctrlp.vim'
 
 set number
 set title
@@ -74,6 +76,8 @@ set ignorecase
 set smartcase
 "wrap around
 set wrapscan
+
+autocmd BufNewFile,BufRead *.json set filetype=javascript
 
 "Cursor Movement
 nmap j <Plug>(accelerated_jk_gj)
