@@ -78,6 +78,8 @@ set smartcase
 set wrapscan
 
 autocmd BufNewFile,BufRead *.json set filetype=javascript
+autocmd BufNewFile,BufRead *.psgi set filetype=perl
+autocmd BufNewFile,BufRead *.t    set filetype=perl
 
 "Cursor Movement
 nmap j <Plug>(accelerated_jk_gj)
@@ -87,3 +89,16 @@ map <C-n> :NERDTreeToggle<CR>
 
 "testing
 set wildmode=list,full
+
+" Open perl file by package name under the cursor
+NeoBundle 'nakatakeshi/jump2pm.vim', '', 'perl'
+noremap <Leader>pv :call Jump2pm('vne')<CR>
+noremap <Leader>pf :call Jump2pm('e')<CR>
+noremap <Leader>ps :call Jump2pm('sp')<CR>
+noremap <Leader>pt :call Jump2pm('tabe')<CR>
+vnoremap <Leader>pv :call Jump2pmV('vne')<CR>
+vnoremap <Leader>pf :call Jump2pmV('e')<CR>
+vnoremap <Leader>ps :call Jump2pmV('sp')<CR>
+vnoremap <Leader>pt :call Jump2pmV('tabe')<CR>"
+
+vnoremap <silent> * "vy/\V<C-r>=substitute(escape(@v,'\/'),"\n",'\\n','g')<CR><CR>"
