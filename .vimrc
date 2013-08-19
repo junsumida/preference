@@ -25,6 +25,8 @@ NeoBundle 'kchmck/vim-coffee-script'
 
 "Ruby
 NeoBundle 'scrooloose/syntastic'
+NeoBundle 'vim-ruby/vim-ruby'
+NeoBundle 'tpope/vim-rails'
 
 "Filer
 NeoBundle 'scrooloose/nerdtree'
