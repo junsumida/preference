@@ -13,6 +13,11 @@ NeoBundle 'Shougo/vimproc'
 
 "Neocomplcache
 NeoBundle 'Shougo/neocomplcache'
+" Install clang_complete
+NeoBundle 'Rip-Rip/clang_complete'
+let g:clang_periodic_quickfix = 1
+let g:clang_complete_copen = 1
+let g:clang_use_library = 1
 
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
@@ -53,6 +58,8 @@ let g:neocomplcache_keyword_patterns['default'] = '\h\w*'
 NeoBundle 'Shougo/neosnippet'
 
 NeoBundle 'Shougo/unite.vim'
+"NeoBundle 'h1mesuke/unite-outline'
+"let g:unite_data_directory='~/.vim/bundle/unite-outline/autoload/unite/sources/outline/'
 NeoBundle 'Shougo/vimshell'
 
 "coffeescript
@@ -61,7 +68,6 @@ NeoBundle 'kchmck/vim-coffee-script'
 "Ruby
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'tpope/vim-rails'
 
 "Filer
 NeoBundle 'scrooloose/nerdtree'
@@ -81,6 +87,9 @@ NeoBundle 'tpope/vim-surround'
 "Ctrlp: filepath completion like in zsh
 NeoBundle 'kien/ctrlp.vim'
 
+"c++
+NeoBundle 'octol/vim-cpp-enhanced-highlight'
+
 set number
 set title
 set autoindent
@@ -91,9 +100,9 @@ set tabstop=2
 set expandtab
 
 "backup directory
-set backupdir=$HOME/.vim/backup/
+set backupdir=~/.vim/backup/
 "swap files directory
-set dictionary=$HOME/.vim/swap/
+set directory=~/.vim/swap/
 
 "syntax
 syntax on
@@ -139,11 +148,3 @@ vnoremap <Leader>ps :call Jump2pmV('sp')<CR>
 vnoremap <Leader>pt :call Jump2pmV('tabe')<CR>"
 
 vnoremap <silent> * "vy/\V<C-r>=substitute(escape(@v,'\/'),"\n",'\\n','g')<CR><CR>"
-
-NeoBundle 'git@git.lo.mixi.jp:packages/vim.git', {
-    \ 'name' : 'mixi-packages-vim-unite-inspect-package',
-    \ 'rtp'  : 'inspect-package',
-    \ 'depends' : [
-    \   'Shougo/unite.vim.git',
-    \ ],
-    \}
